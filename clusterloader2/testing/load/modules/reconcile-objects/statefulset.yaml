@@ -1,5 +1,5 @@
 {{$EnablePVs := DefaultParam .CL2_ENABLE_PVS true}}
-{{$PVSize := DefaultParam .CL2_PV_SIZE "100Mi"}}
+{{$PVSize := DefaultParam .CL2_PV_SIZE "1Gi"}}
 {{$PVStorageClass := DefaultParam .CL2_PV_STORAGE_CLASS ""}}
 {{$TOLERATION := DefaultParam .CL2_TOLERATION ""}}
 {{$podPayloadSize := DefaultParam .CL2_STATEFULSET_POD_PAYLOAD_SIZE 0}}
