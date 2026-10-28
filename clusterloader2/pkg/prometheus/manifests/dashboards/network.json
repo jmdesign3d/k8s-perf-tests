@@ -87,7 +87,7 @@
                     "targets": [
                         {
                             "datasource": "$source",
-                            "expr": "quantile_over_time(0.99, kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{quantile=\"0.99\"}[24h])",
+                            "expr": "quantile_over_time(0.99, kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{quantile=\"0.99\"}[24h])",
                             "format": "time_series",
                             "hide": false,
                             "instant": false,
@@ -95,14 +95,14 @@
                             "intervalFactor": 2,
                             "legendFormat": "{{quantile}}",
                             "metric": "",
-                            "query": "quantile_over_time(0.99, kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{quantile=\"0.99\"}[24h])",
+                            "query": "quantile_over_time(0.99, kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{quantile=\"0.99\"}[24h])",
                             "refId": "",
                             "step": 10,
                             "target": ""
                         },
                         {
                             "datasource": "$source",
-                            "expr": "quantile_over_time(0.99, kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{quantile=\"0.90\"}[24h])",
+                            "expr": "quantile_over_time(0.99, kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{quantile=\"0.90\"}[24h])",
                             "format": "time_series",
                             "hide": false,
                             "instant": false,
@@ -110,14 +110,14 @@
                             "intervalFactor": 2,
                             "legendFormat": "{{quantile}}",
                             "metric": "",
-                            "query": "quantile_over_time(0.99, kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{quantile=\"0.90\"}[24h])",
+                            "query": "quantile_over_time(0.99, kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{quantile=\"0.90\"}[24h])",
                             "refId": "",
                             "step": 10,
                             "target": ""
                         },
                         {
                             "datasource": "$source",
-                            "expr": "quantile_over_time(0.99, kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{quantile=\"0.50\"}[24h])",
+                            "expr": "quantile_over_time(0.99, kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{quantile=\"0.50\"}[24h])",
                             "format": "time_series",
                             "hide": false,
                             "instant": false,
@@ -125,7 +125,7 @@
                             "intervalFactor": 2,
                             "legendFormat": "{{quantile}}",
                             "metric": "",
-                            "query": "quantile_over_time(0.99, kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{quantile=\"0.50\"}[24h])",
+                            "query": "quantile_over_time(0.99, kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{quantile=\"0.50\"}[24h])",
                             "refId": "",
                             "step": 10,
                             "target": ""
@@ -244,7 +244,7 @@
                     "targets": [
                         {
                             "datasource": "$source",
-                            "expr": "kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{quantile=\"0.99\"}",
+                            "expr": "kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{quantile=\"0.99\"}",
                             "format": "time_series",
                             "hide": false,
                             "instant": false,
@@ -252,14 +252,14 @@
                             "intervalFactor": 2,
                             "legendFormat": "{{quantile}}",
                             "metric": "",
-                            "query": "kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{quantile=\"0.99\"}",
+                            "query": "kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{quantile=\"0.99\"}",
                             "refId": "",
                             "step": 10,
                             "target": ""
                         },
                         {
                             "datasource": "$source",
-                            "expr": "kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{quantile=\"0.90\"}",
+                            "expr": "kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{quantile=\"0.90\"}",
                             "format": "time_series",
                             "hide": false,
                             "instant": false,
@@ -267,14 +267,14 @@
                             "intervalFactor": 2,
                             "legendFormat": "{{quantile}}",
                             "metric": "",
-                            "query": "kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{quantile=\"0.90\"}",
+                            "query": "kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{quantile=\"0.90\"}",
                             "refId": "",
                             "step": 10,
                             "target": ""
                         },
                         {
                             "datasource": "$source",
-                            "expr": "kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{quantile=\"0.50\"}",
+                            "expr": "kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{quantile=\"0.50\"}",
                             "format": "time_series",
                             "hide": false,
                             "instant": false,
@@ -282,7 +282,7 @@
                             "intervalFactor": 2,
                             "legendFormat": "{{quantile}}",
                             "metric": "",
-                            "query": "kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{quantile=\"0.50\"}",
+                            "query": "kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{quantile=\"0.50\"}",
                             "refId": "",
                             "step": 10,
                             "target": ""

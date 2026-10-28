@@ -15,6 +15,8 @@ allowVolumeExpansion: true
 {{else}}
 parameters:
   type: {{$PROMETHEUS_STORAGE_CLASS_VOLUME_TYPE}}
+  disk_type: {{$PROMETHEUS_STORAGE_CLASS_VOLUME_TYPE}}
+  storage_type: block
 {{end}}
 volumeBindingMode: WaitForFirstConsumer
 {{if .RetainPD}}

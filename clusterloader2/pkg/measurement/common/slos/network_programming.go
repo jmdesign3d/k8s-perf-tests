@@ -37,7 +37,7 @@ const (
 	// %v should be replaced with query window size (duration of the test).
 	// This measurement assumes, that there is no data points for the rest of the cluster-day.
 	// Definition: https://github.com/kubernetes/community/blob/master/sig-scalability/slos/network_programming_latency.md
-	query = "quantile_over_time(0.99, kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{}[%v])"
+	query = "quantile_over_time(0.99, kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{}[%v])"
 )
 
 func init() {

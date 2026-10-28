@@ -31,6 +31,7 @@ const (
 	SkeletonName    = "skeleton"
 	VsphereName     = "vsphere"
 	KubestellarName = "ks"
+	VKEName         = "vke"
 )
 
 const (

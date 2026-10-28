@@ -212,7 +212,8 @@ func SSH(ctx context.Context, cmd, host, provider string) (Result, error) {
 	// defaulting here as well for logging clarity.
 	result.User = os.Getenv("KUBE_SSH_USER")
 	if result.User == "" {
-		result.User = os.Getenv("USER")
+		result.User = "root"
+		//result.User = os.Getenv("USER")
 	}
 
 	if bastion := os.Getenv(sshBastionEnvKey); len(bastion) > 0 {

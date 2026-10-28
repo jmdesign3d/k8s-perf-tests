@@ -151,6 +151,8 @@ func NewProvider(initOptions *InitOptions) (Provider, error) {
 		return NewVsphereProvider(configs), nil
 	case KubestellarName:
 		return NewKubestellarProvider(configs), nil
+	case VKEName:
+		return NewVKEProvider(configs), nil
 	default:
 		return nil, fmt.Errorf("unsupported provider name: %s", initOptions.ProviderName)
 	}

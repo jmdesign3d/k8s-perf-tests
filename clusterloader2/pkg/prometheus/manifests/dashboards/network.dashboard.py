@@ -32,7 +32,7 @@ NETWORK_PROGRAMMING_PANEL = [
             (
                 "quantile_over_time("
                 + "0.99, "
-                + 'kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{{quantile="{quantile}"}}[24h])'
+                + 'kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{{quantile="{quantile}"}}[24h])'
             ),
             legend="{{quantile}}",
         ),
@@ -48,7 +48,7 @@ NETWORK_PROGRAMMING_PANEL = [
             + "that were part of the rules sync."
         ),
         targets=d.show_quantiles(
-            'kubeproxy:kubeproxy_network_programming_duration:histogram_quantile{{quantile="{quantile}"}}',
+            'kubeproxy:kubeproxy_network_programming_duration_seconds:histogram_quantile{{quantile="{quantile}"}}',
             legend="{{quantile}}",
         ),
         yAxes=g.single_y_axis(format=g.SECONDS_FORMAT),
